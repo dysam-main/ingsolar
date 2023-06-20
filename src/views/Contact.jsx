@@ -1,18 +1,19 @@
 import React from "react";
-import handleInput from "../reactHooks/handleInput";
+import useInput from "../reactHooks/useInput";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import { useMemo } from "react";
 import credentials from "../credentials";
 import SectionTitle from "../commons/SectionTitle"
 
 const Contact = () => {
-  const nombre = handleInput();
-  const email = handleInput();
-  const mensaje = handleInput();
+  const nombre = useInput();
+  const email = useInput();
+  const mensaje = useInput();
 
   const { isLoaded } = useLoadScript({ googleMapsApiKey: credentials.mapsKey });
   const center = useMemo(() => ({ lat: -37.1767267, lng: -62.7596665 }), [])
 
+  console.log("nombre",nombre.value)
   return (
     <div id="Contact">
       <form>
