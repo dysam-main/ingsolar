@@ -13,7 +13,6 @@ const Contact = () => {
   const { isLoaded } = useLoadScript({ googleMapsApiKey: credentials.mapsKey });
   const center = useMemo(() => ({ lat: -37.1767267, lng: -62.7596665 }), [])
 
-  console.log("nombre",nombre.value)
   return (
     <div id="Contact">
       <form>
