@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+:root{
+  /* MARGINS & PADDINGS */
+  --space-quarter:0.25rem;
+  --space-half:0.5rem;
+  --space-threequarter:0.75rem;
+  --space-unit:1rem;
+  --space-oneandquarter:1.25rem;
+  --space-oneandhalf:1.5rem;
+  --space-oneandthreequarter:1.75rem;
+  --space-double:2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin:1px;
+  padding: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAVBAR */
+
+#Navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: var(--space-double);
+  padding-right: var(--space-double);
+  padding-top: var(--space-unit);
+  padding-bottom: var(--space-unit);
+}
+
+#Navbar ul{
+  display: flex;
+}
+
+#Navbar ul li{
+  list-style-type: none;
+  margin-right: var(--space-unit);
+}
+
+/* FOOTER */
+
+#Footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#Footer ul{
+  list-style-type: none;
+}
+
+#Footer #FooterLeft{
+  display: flex;
+}
+
+#FooterList1{
+  margin-right: var(--space-oneandhalf);
+}
+
+/* CONTACT */
+
+#Contact{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#Contact form{
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Contact .mapContainer {
+  width: 100%;
+  height: 30vh;
+}
+
+/* NOSOTROS */
+
+#AboutUs .Contenido{
+  display: flex;
+  flex-direction: column;
+}
+
+#AboutUs .Contenido .trio{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#AboutUs .Contenido .trio .trioDiv{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#AboutUs .SeccionNumeros .Numeros{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#AboutUs .SeccionNumeros .Numeros .numerosDiv{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
 }

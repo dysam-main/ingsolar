@@ -1,7 +1,7 @@
 import React from "react";
 
 const Faqs=()=>{
-    return <div className="Faqs"></div>
+    return <div id="Faqs"></div>
 }
 
 export default Faqs
