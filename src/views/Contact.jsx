@@ -14,7 +14,7 @@ const Contact = () => {
   const center = useMemo(() => ({ lat: -37.1767267, lng: -62.7596665 }), [])
 
   return (
-    <div id="Contact">
+    <div id="Contact principal">
       <form>
         <label htmlFor="">Nombre</label>
         <input {...nombre} />

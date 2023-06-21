@@ -6,7 +6,7 @@ import SectionTitle2 from "../commons/SectionTitle2"
 
 
 const Main=()=>{
-    return <div id="Main">
+    return <div id="Main principal">
         <section>
             <SectionTitle content={data.titulo1}/>
             <SectionP content={data.parrafo1}/>

@@ -5,7 +5,7 @@ import SectionP from "../commons/SectionP";
 
 const AboutUs = () => {
   return (
-    <div id="AboutUs">
+    <div id="AboutUs principal">
       <section className="Contenido">
         <SectionTitle content={data.titulo1} />
         <SectionP content={data.parrafo1} />

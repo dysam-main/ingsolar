@@ -1,5 +1,5 @@
 import React from "react";
-import SPCard from "../commons/SPCard"
+import WorkCard from "../commons/WorkCard"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
@@ -13,7 +13,7 @@ const Slider=({content,visibles})=>{
         //   onSlideChange={() => console.log('slide change')}
         //   onSwiper={(swiper) => console.log(swiper)}
         >
-            {content?.map((servicio)=><SwiperSlide key={servicio.nombre}><SPCard content={servicio}/></SwiperSlide>)}
+            {content?.map((servicio)=><SwiperSlide key={servicio.nombre}><WorkCard content={servicio}/></SwiperSlide>)}
         </Swiper>
       );
 
